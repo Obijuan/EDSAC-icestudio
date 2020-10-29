@@ -2486,7 +2486,7 @@
           "type": "basic.memory",
           "data": {
             "name": "",
-            "list": "//-- Opcode 0\n0_0_0_0_0_0_0_0_1_1_0 // µnext \n0_0_0_0_0_1_1_0_1_0_0 // ld_ir inc_pc µnext\n0\n0\n\n@14 //-- Opcode 5: T (Transfer A to mem)\n0\n0\n0_0_0_0_1_0_0_0_1_0_0 // sel_dat µnext\n1_0_0_0_1_0_0_1_1_0_0 // rst_A rw sel_dat µnext\n\n@24 //-- Opcode 9: O (output)\n0 \n0\n0_0_0_0_1_0_0_0_1_0_0 // sel_dat µnext\n0_0_0_1_1_0_0_0_1_1_0 // out sel_dat\n\n@34 //-- Opcode 13: ZS\n0\n0\n0_0_0_0_0_0_0_0_0_1_0\n0_0_0_0_0_0_0_0_0_1_0\n\n@70 //-- Opcode 28: AS\n0\n0\n0_0_0_0_1_0_0_0_1_0_0 // sel_dat µnext\n0_1_1_0_1_0_0_0_1_1_0 // alu_sum ld_A sel_dat µnext\n",
+            "list": "//-- Opcode 0\n0_0_0_0_0_1_1_0_1_1_0 // ld_ir inc_pc µnext µnext \n0\n0\n0\n\n@14 //-- Opcode 5: T (Transfer A to mem)\n0\n0_0_0_0_1_0_0_0_1_0_0 // sel_dat µnext\n1_0_0_0_1_0_0_1_1_0_0 // rst_A rw sel_dat µnext\n0_0_0_0_0_0_0_0_1_0_0 // nop\n\n@24 //-- Opcode 9: O (output)\n0 \n0_0_0_0_1_0_0_0_1_0_0 // sel_dat µnext\n0_0_0_1_1_0_0_0_1_1_0 // out sel_dat\n0_0_0_0_0_0_0_0_1_0_0 // nop\n\n@34 //-- Opcode 13: ZS\n0\n0_0_0_0_0_0_0_0_0_1_0\n0_0_0_0_0_0_0_0_0_1_0\n0_0_0_0_0_0_0_0_0_1_0\n\n@70 //-- Opcode 28: AS\n0\n0_0_0_0_1_0_0_0_1_0_0 // sel_dat µnext\n0_1_1_0_1_0_0_0_1_1_0 // alu_sum ld_A sel_dat µnext\n0_0_0_0_0_0_0_0_1_0_0 // nop",
             "local": false,
             "format": 16
           },
@@ -3839,16 +3839,6 @@
         },
         {
           "source": {
-            "block": "cdc85610-7d4d-4538-8da6-66dac3144d85",
-            "port": "997db8c4-b772-49d8-83e7-4427aff720e6"
-          },
-          "target": {
-            "block": "f4b6ced6-fe37-48aa-b739-ce14691f0b98",
-            "port": "97b51945-d716-4b6c-9db9-970d08541249"
-          }
-        },
-        {
-          "source": {
             "block": "f4b6ced6-fe37-48aa-b739-ce14691f0b98",
             "port": "664caf9e-5f40-4df4-800a-b626af702e62"
           },
@@ -4195,6 +4185,16 @@
             "port": "in"
           },
           "size": 5
+        },
+        {
+          "source": {
+            "block": "cdc85610-7d4d-4538-8da6-66dac3144d85",
+            "port": "b58132b2-2e39-4a85-ab5b-63bded91cecc"
+          },
+          "target": {
+            "block": "f4b6ced6-fe37-48aa-b739-ce14691f0b98",
+            "port": "97b51945-d716-4b6c-9db9-970d08541249"
+          }
         }
       ]
     }
