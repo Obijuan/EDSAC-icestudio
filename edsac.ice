@@ -470,6 +470,36 @@
           }
         },
         {
+          "id": "a3d77267-843c-4d4e-bb05-35af4e376bfd",
+          "type": "basic.output",
+          "data": {
+            "name": "LED",
+            "range": "[2:0]",
+            "pins": [
+              {
+                "index": "2",
+                "name": "DD2",
+                "value": "116"
+              },
+              {
+                "index": "1",
+                "name": "DD1",
+                "value": "115"
+              },
+              {
+                "index": "0",
+                "name": "DD0",
+                "value": "114"
+              }
+            ],
+            "virtual": false
+          },
+          "position": {
+            "x": 1792,
+            "y": -568
+          }
+        },
+        {
           "id": "daefb1f1-8e2c-43dc-8e01-ad4d9ec69dd8",
           "type": "basic.outputLabel",
           "data": {
@@ -2212,8 +2242,8 @@
             "pins": [
               {
                 "index": "0",
-                "name": "D2",
-                "value": "4"
+                "name": "LED0",
+                "value": "45"
               }
             ],
             "virtual": false
@@ -2379,8 +2409,8 @@
             "y": -1000
           },
           "size": {
-            "width": 360,
-            "height": 184
+            "width": 448,
+            "height": 176
           }
         },
         {
@@ -2428,20 +2458,20 @@
           }
         },
         {
-          "id": "e04f7017-df36-45f7-9ccc-26a63bb55d6d",
+          "id": "0e39ec79-6348-4cb3-b3be-53ad53996679",
           "type": "basic.memory",
           "data": {
             "name": "",
-            "list": "\n01001_0_0000000011_0  //-- O3S\n\n01101_0_0000000000_0  //-- ZS",
+            "list": "\n01001_0_0000000000_0  //-- O0S\n",
             "local": false,
             "format": 10
           },
           "position": {
-            "x": -1072,
-            "y": -600
+            "x": -1144,
+            "y": -608
           },
           "size": {
-            "width": 320,
+            "width": 408,
             "height": 192
           }
         },
@@ -2455,8 +2485,8 @@
             "format": 10
           },
           "position": {
-            "x": -1056,
-            "y": -1088
+            "x": -1120,
+            "y": -1432
           },
           "size": {
             "width": 360,
@@ -2464,7 +2494,97 @@
           }
         },
         {
+          "id": "fbe4b0e4-ca00-4fbf-ad2c-1ca0be46fcf6",
+          "type": "basic.memory",
+          "data": {
+            "name": "",
+            "list": "11010_0_0000000000_0  //-- X0S (Nop)\n\n01101_0_0000000000_0  //-- ZS",
+            "local": false,
+            "format": 10
+          },
+          "position": {
+            "x": -696,
+            "y": -608
+          },
+          "size": {
+            "width": 408,
+            "height": 192
+          }
+        },
+        {
+          "id": "e04f7017-df36-45f7-9ccc-26a63bb55d6d",
+          "type": "basic.memory",
+          "data": {
+            "name": "",
+            "list": "\n11100_0_0000000100_0  //-- A2S\n\n01101_0_0000000000_0  //-- ZS\n",
+            "local": false,
+            "format": 10
+          },
+          "position": {
+            "x": -480,
+            "y": -1408
+          },
+          "size": {
+            "width": 320,
+            "height": 192
+          }
+        },
+        {
+          "id": "2b72f7f8-7e0d-4e30-a1c8-3759f7034248",
+          "type": "basic.memory",
+          "data": {
+            "name": "",
+            "list": "\n01001_0_0000000011_0  //-- O3S\n\n01101_0_0000000000_0  //-- ZS",
+            "local": false,
+            "format": 10
+          },
+          "position": {
+            "x": -480,
+            "y": -1176
+          },
+          "size": {
+            "width": 320,
+            "height": 192
+          }
+        },
+        {
+          "id": "03e87fb8-ef2c-4cc7-9ca5-651c64e9cad3",
+          "type": "basic.memory",
+          "data": {
+            "name": "",
+            "list": "\n11100_0_0000000110_0  //-- A6S\n\n01001_0_0000000101_0  //-- O5S\n\n00000_0_0000000000_0  //-- P0S",
+            "local": false,
+            "format": 10
+          },
+          "position": {
+            "x": -472,
+            "y": -1616
+          },
+          "size": {
+            "width": 320,
+            "height": 192
+          }
+        },
+        {
           "id": "6e3b574a-ddaf-4400-b421-e205a62b185f",
+          "type": "basic.memory",
+          "data": {
+            "name": "",
+            "list": "11100_0_0000000100_0  //-- A2S\n\n00101_0_0000000000_0  //-- T0S \n\n00000_0_0000000000_1  //-- P0L",
+            "local": false,
+            "format": 10
+          },
+          "position": {
+            "x": -136,
+            "y": -1408
+          },
+          "size": {
+            "width": 320,
+            "height": 192
+          }
+        },
+        {
+          "id": "9ab57e1a-ea6d-4de7-bc12-dc8c4e8c6bed",
           "type": "basic.memory",
           "data": {
             "name": "",
@@ -2473,11 +2593,29 @@
             "format": 10
           },
           "position": {
-            "x": -728,
-            "y": -600
+            "x": -136,
+            "y": -1176
           },
           "size": {
             "width": 320,
+            "height": 192
+          }
+        },
+        {
+          "id": "5c2ecec1-98b3-400c-a62d-1e4fa4786970",
+          "type": "basic.memory",
+          "data": {
+            "name": "",
+            "list": "01001_0_0000000101_0  //-- O5S\n\n00101_0_0000000101_0  //-- T5S    \n\n01101_0_0000000000_0  //-- ZS\n\n00001_0_0000000000_0  //-- Q0S",
+            "local": false,
+            "format": 10
+          },
+          "position": {
+            "x": -128,
+            "y": -1616
+          },
+          "size": {
+            "width": 352,
             "height": 192
           }
         },
@@ -2486,7 +2624,7 @@
           "type": "basic.memory",
           "data": {
             "name": "",
-            "list": "//-- Opcode 0\n0_0_0_0_0_1_1_0_1_1_0 // ld_ir inc_pc µnext µnext \n0\n0\n0\n\n@14 //-- Opcode 5: T (Transfer A to mem)\n0\n0_0_0_0_1_0_0_0_1_0_0 // sel_dat µnext\n1_0_0_0_1_0_0_1_1_0_0 // rst_A rw sel_dat µnext\n0_0_0_0_0_0_0_0_1_0_0 // nop\n\n@24 //-- Opcode 9: O (output)\n0 \n0_0_0_0_1_0_0_0_1_0_0 // sel_dat µnext\n0_0_0_1_1_0_0_0_1_1_0 // out sel_dat\n0_0_0_0_0_0_0_0_1_0_0 // nop\n\n@34 //-- Opcode 13: ZS\n0\n0_0_0_0_0_0_0_0_0_1_0\n0_0_0_0_0_0_0_0_0_1_0\n0_0_0_0_0_0_0_0_0_1_0\n\n@70 //-- Opcode 28: AS\n0\n0_0_0_0_1_0_0_0_1_0_0 // sel_dat µnext\n0_1_1_0_1_0_0_0_1_1_0 // alu_sum ld_A sel_dat µnext\n0_0_0_0_0_0_0_0_1_0_0 // nop",
+            "list": "//-- Opcode 0\n0_0_0_0_0_1_1_0_1_1_0 // ld_ir inc_pc µnext µnext \n0\n0\n0\n\n@14 //-- Opcode 5: T (Transfer A to mem)\n0\n0_0_0_0_1_0_0_0_1_0_0 // sel_dat µnext\n1_0_0_0_1_0_0_1_1_0_0 // rst_A rw sel_dat µnext\n0_0_0_0_0_0_0_0_1_0_0 // nop\n\n@24 //-- Opcode 9: O (output)\n0 \n0_0_0_0_1_0_0_0_1_0_0 // sel_dat µnext\n0_0_0_1_1_0_0_0_1_1_0 // out sel_dat\n0_0_0_0_0_0_0_0_1_0_0 // nop\n\n@34 //-- Opcode 13: ZS (HALT)\n0\n0_0_0_0_0_0_0_0_0_1_0\n0_0_0_0_0_0_0_0_0_1_0\n0_0_0_0_0_0_0_0_0_1_0\n\n@68 //-- Opcode 26: XS (NOP)\n0\n0_0_0_0_0_0_0_0_1_1_1 // nop\n0_0_0_0_0_0_0_0_1_0_0 // nop\n0_0_0_0_0_0_0_0_1_0_0 // nop\n\n@70 //-- Opcode 28: AS (ADD)\n0\n0_0_0_0_1_0_0_0_1_0_0 // sel_dat µnext\n0_1_1_0_1_0_0_0_1_1_0 // alu_sum ld_A sel_dat µnext\n0_0_0_0_0_0_0_0_1_0_0 // nop",
             "local": false,
             "format": 16
           },
@@ -4083,26 +4221,6 @@
         },
         {
           "source": {
-            "block": "e04f7017-df36-45f7-9ccc-26a63bb55d6d",
-            "port": "memory-out"
-          },
-          "target": {
-            "block": "02cd6d9e-782c-4f5a-8414-1bf6b0466922",
-            "port": "a53cc55c-bbc1-4233-9295-a240e87c26b8"
-          }
-        },
-        {
-          "source": {
-            "block": "6e3b574a-ddaf-4400-b421-e205a62b185f",
-            "port": "memory-out"
-          },
-          "target": {
-            "block": "02cd6d9e-782c-4f5a-8414-1bf6b0466922",
-            "port": "c93ae829-e954-44ba-b010-a50738fb2a5c"
-          }
-        },
-        {
-          "source": {
             "block": "8d7cee9c-e9c3-4c0f-bf61-04f2cf7d0cc3",
             "port": "outlabel"
           },
@@ -4194,6 +4312,37 @@
           "target": {
             "block": "f4b6ced6-fe37-48aa-b739-ce14691f0b98",
             "port": "97b51945-d716-4b6c-9db9-970d08541249"
+          }
+        },
+        {
+          "source": {
+            "block": "575bdb5d-2ee0-4021-9e3e-647b5b493207",
+            "port": "bb87f91f-85cc-46cc-b84d-d95e8d355b44"
+          },
+          "target": {
+            "block": "a3d77267-843c-4d4e-bb05-35af4e376bfd",
+            "port": "in"
+          },
+          "size": 3
+        },
+        {
+          "source": {
+            "block": "fbe4b0e4-ca00-4fbf-ad2c-1ca0be46fcf6",
+            "port": "memory-out"
+          },
+          "target": {
+            "block": "02cd6d9e-782c-4f5a-8414-1bf6b0466922",
+            "port": "c93ae829-e954-44ba-b010-a50738fb2a5c"
+          }
+        },
+        {
+          "source": {
+            "block": "0e39ec79-6348-4cb3-b3be-53ad53996679",
+            "port": "memory-out"
+          },
+          "target": {
+            "block": "02cd6d9e-782c-4f5a-8414-1bf6b0466922",
+            "port": "a53cc55c-bbc1-4233-9295-a240e87c26b8"
           }
         }
       ]
